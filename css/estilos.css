@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/*estilos*/
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin:2em;
+}
+@media screen and (max-width: 480px) {
+    body{
+        margin: 1px;
+    }
+}
+div{
+    margin:3px;
+}
+h1{
+    font-weight: bold;
+    font-size: 18px;
+    color: #7e08e4;
+    text-align:left;
+    margin: 0 auto;
+}
+h2{
+    font-weight: bold;
+    font-size: 12px;
+    color: #999;
+    text-align:left;
+    margin: 0 auto;
+}
+h3{
+    font-weight: bold;
+    font-size: 12px;
+}
+p{
+    font-size: 12px;
+}
+div.setPregunta{
+    /*border: 1px solid #F00;*/
+    background-color:#EFEFFF;
+    padding:5px;
+    margin-bottom:1em;
+}
+div.preguntaTexto{
+    margin:10px;
+    font-size:0.9em;
+}
+div.opciones{
+    /*border: 1px solid #333;*/
+    margin:2px;
+}
+div.opciones a.opcion{
+    /*border: 1px solid #369;*/
+    margin:2px;
+    white-space: normal;
+    font-size: 0.9em;
+}
+div#retroalimentacion{
+    font-size:1em;
+    text-align:center;
+    padding:1px;
+    background-color: #efeeff;
+}
+.bien{
+    background-image: url('palomita.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
+    padding-left: 16px !important;/* ancho de la imagen más un poco */
+    margin: 0 10px !important;
+}
+.mal{
+    background-image: url('tache.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
+    padding-left: 16px !important;/* ancho de la imagen más un poco */
+    margin: 0 10px !important;
+    /*opacity: 0.75;*/
+}
+.bienPerdida {
+    background-color: #aaff55;
+    /*opacity: 0.75;*/
+}
+
+/* Estilo retro pop up */
+.dialog-background{
+    background: none repeat scroll 0 0 rgba(0, 0, 25, 0.5);
+    height: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.dialog-loading-wrapper {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    left: 20%;
+    right: 20%;
+    position: fixed;
+    top: 30%;
+    z-index: 101;
+
+}
+.dialog-loading-icon {
+    background-color: #FFFFFF !important;
+    border-radius: 13px;
+    display: block;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+}
+img#botonCerrarRetro{
+    /*float: right;*/
+    cursor: pointer;
+}
+img#botonCerrarRetro:hover{
+    opacity: 0.5;
+    color: #000;
+}
+img#botonCerrarRetro:hover:after {
+    content: "Cerrar";
+}
+#retroFinalMensaje{
+    min-height: 2em;
+}
+#retroFinalMensaje div.bien, #retroFinalMensaje div.mal{
+    float: left;
+    height: 16px;
+}
+/* FIN Estilo retro pop up */
